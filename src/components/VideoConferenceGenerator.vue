@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col">
+  <div class="bg-white border border-gray-600 rounded flex flex-col p-3 -mt-3">
     <div class="font-bold">Video Konferenz</div>
 
-    <copy-input :value="url" class="mt-3" readonly />
+    <copy-input :value="url" class="mt-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" readonly />
 
     <button
       class="flex flex-row items-center justify-between mt-3 btn btn--primary class"
@@ -10,7 +10,10 @@
     >
       <div>Video-Konferenz öffnen</div>
       <div class="text-white">
-        <svg-icon name="external-link" class="w-5 h-5 text-white fill-current" />
+        <svg-icon
+          name="external-link"
+          class="w-5 h-5 ml-3 text-white fill-current"
+        />
       </div>
     </button>
   </div>

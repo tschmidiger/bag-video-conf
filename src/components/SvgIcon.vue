@@ -1,8 +1,5 @@
 <template>
-  <svg :class="className" xmlns="http://www.w3.org/2000/svg">
-    <title v-if="title">{{ title }}</title>
-    <use :xlink:href="iconPath" xmlns:xlink="http://www.w3.org/1999/xlink" />
-  </svg>
+    <img :src="iconPath" :class="className" :title="title" />
 </template>
 
 <script>
@@ -33,7 +30,7 @@ export default {
       if (Object.prototype.hasOwnProperty.call(icon, "default")) {
         icon = icon.default;
       }
-      return icon.url;
+      return 'https://vbst.safezone.ch'  + icon;
     },
 
     className() {

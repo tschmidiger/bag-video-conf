@@ -4,7 +4,7 @@
       ref="input"
       :value="value"
       :readonly="readonly"
-      class="mr-2 bg-transparent transition-bg transition-text"
+      class="mr-auto bg-transparent transition-bg transition-text"
       :class="{ 'bg-black': isCopying, 'text-white': isCopying }"
       @change="change"
     />
@@ -13,6 +13,7 @@
         name="clone"
         class="w-5 h-5 transition-size"
         :class="{ 'w-6': isCopying, 'h-6': isCopying }"
+        title="Link in Zwischenablage kopieren"
       />
     </button>
   </div>
