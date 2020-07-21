@@ -1,11 +1,11 @@
 <template>
   <v-popover @show="isShown = true" @hide="isShown = false">
-    <button class="btn btn:hover flex items-center ml-2 font-sans text-xl">
+    <button class="btn btn:hover flex items-center ml-2 my-1 font-sans text-xl">
       <svg-icon name="video-light" class="w-6 h-6" />
       <div class="ml-2">Video Konferenz starten</div>
     </button>
 
-    <div slot="popover" class="py-2 ml-6">
+    <div slot="popover">
       <!--
         The v-if part is a little trick to force the component to be
         re-rendered so each time the button is pressed, the URL will be
